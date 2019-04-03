@@ -6,7 +6,11 @@ const { sendMail } = require('./controllers/mail_controller');
 const app = express();
 const port = process.env.PORT || 1234;
 
-app.use(bodyParser.json())
+app.use(bodyParser.json());
+app.use((req, res, next) => {
+  console.log(req.body);
+  next();
+});
 
 app.post('/mail', sendMail);
 
