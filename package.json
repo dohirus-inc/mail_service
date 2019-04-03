@@ -1,0 +1,25 @@
+{
+  "name": "dohirus_mail_service",
+  "version": "1.0.0",
+  "description": "Simple server to redirect mails from dohirus.com",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dohirus-inc/mail_service.git"
+  },
+  "author": "narghev <n.ghevandiani@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dohirus-inc/mail_service/issues"
+  },
+  "homepage": "https://github.com/dohirus-inc/mail_service#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "node-fetch": "^2.3.0"
+  }
+}
